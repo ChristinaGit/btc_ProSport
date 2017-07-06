@@ -1,0 +1,12 @@
+<resources>
+    <!-- Playground editor -->
+    <dimen name="playground_general_info_editor_spacing">8dp</dimen>
+    <dimen name="playground_general_info_editor_padding">16dp</dimen>
+    <dimen name="playground_general_info_editor_photo_height">100dp</dimen>
+    <dimen name="playground_general_info_editor_photos_spacing">1dp</dimen>
+
+    <dimen name="card_secondary_text_margin_top">12dp</dimen>
+    <dimen name="card_text_margin">16dp</dimen>
+
+    <dimen name="feedback_input_field_margin">16dp</dimen>
+</resources>

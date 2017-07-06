@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="128dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/sport_complex_info_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:foreground="?selectableItemBackground"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible">
+
+        <TextView
+            android:id="@+id/sport_complex_name"
+            style="@style/ProSport.Base.BottomSheet.Header"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/sport_complex_address"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/sport_complex_address_icon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="spread_inside"
+            tools:text="Футбольное поле с подогревом CitySport 'Буревестник' №1"/>
+
+        <ImageView
+            android:id="@+id/sport_complex_address_icon"
+            style="@style/ProSport.Base.BottomSheet.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_material_location_on"
+            android:tint="?android:textColorSecondary"
+            app:layout_constraintBottom_toBottomOf="@+id/sport_complex_address"
+            app:layout_constraintEnd_toStartOf="@+id/sport_complex_address"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/sport_complex_address"
+            tools:ignore="ContentDescription"/>
+
+        <TextView
+            android:id="@+id/sport_complex_address"
+            style="@style/ProSport.Base.BottomSheet.Item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxLines="3"
+            app:layout_constraintBottom_toTopOf="@+id/sport_complex_subway_stations"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/sport_complex_address_icon"
+            app:layout_constraintTop_toBottomOf="@+id/sport_complex_name"
+            tools:text="Московская обл., Солнечногорский р-н, д. Голиково, ул. Шоссейная, влад. 1, стр. 5"/>
+
+
+        <ImageView
+            android:id="@+id/sport_complex_subway_stations_icon"
+            style="@style/ProSport.Base.BottomSheet.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_material_subway"
+            android:tint="?android:textColorSecondary"
+            app:layout_constraintBottom_toBottomOf="@+id/sport_complex_subway_stations"
+            app:layout_constraintEnd_toStartOf="@+id/sport_complex_subway_stations"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/sport_complex_subway_stations"
+            tools:ignore="ContentDescription"/>
+
+        <TextView
+            android:id="@+id/sport_complex_subway_stations"
+            style="@style/ProSport.Base.BottomSheet.Item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxLines="3"
+            app:layout_constraintBottom_toTopOf="@+id/sport_complex_phone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/sport_complex_address_icon"
+            app:layout_constraintTop_toBottomOf="@+id/sport_complex_address"
+            tools:text="Subway stations"/>
+
+        <ImageView
+            android:id="@+id/sport_complex_phone_icon"
+            style="@style/ProSport.Base.BottomSheet.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_material_local_phone"
+            android:tint="?android:textColorSecondary"
+            app:layout_constraintBottom_toBottomOf="@+id/sport_complex_phone"
+            app:layout_constraintEnd_toStartOf="@+id/sport_complex_phone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/sport_complex_phone"
+            tools:ignore="ContentDescription"/>
+
+        <TextView
+            android:id="@+id/sport_complex_phone"
+            style="@style/ProSport.Base.BottomSheet.Item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxLines="3"
+            app:layout_constraintBottom_toTopOf="@+id/sport_complex_work_time"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/sport_complex_phone_icon"
+            app:layout_constraintTop_toBottomOf="@+id/sport_complex_subway_stations"
+            tools:text="+79294513587"/>
+
+        <ImageView
+            android:id="@+id/sport_complex_work_time_icon"
+            style="@style/ProSport.Base.BottomSheet.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_material_schedule"
+            android:tint="?android:textColorSecondary"
+            app:layout_constraintBottom_toBottomOf="@+id/sport_complex_work_time"
+            app:layout_constraintEnd_toStartOf="@+id/sport_complex_work_time"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/sport_complex_work_time"
+            tools:ignore="ContentDescription"/>
+
+        <TextView
+            android:id="@+id/sport_complex_work_time"
+            style="@style/ProSport.Base.BottomSheet.Item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            app:layout_constraintBottom_toTopOf="@+id/sport_complex_photos_divider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/sport_complex_work_time_icon"
+            app:layout_constraintTop_toBottomOf="@+id/sport_complex_phone"
+            tools:text="12:00 - 19:00"/>
+
+        <ImageView
+            android:id="@+id/sport_complex_photos_divider"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:scaleType="fitXY"
+            android:src="?android:listDivider"
+            app:layout_constraintBottom_toTopOf="@+id/sport_complex_photos"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sport_complex_work_time"
+            tools:ignore="ContentDescription"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/sport_complex_photos"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="H,16:9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sport_complex_photos_divider"
+            tools:background="?colorAccent"/>
+
+        <com.btc.common.extension.view.PageIndicatorView
+            android:id="@+id/sport_complex_photos_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:minHeight="100dp"
+            android:minWidth="100dp"
+            app:indicatorSelectedTint="?colorAccent"
+            app:indicatorSpacing="4dp"
+            app:indicatorTint="@color/pageIndicatorNormalColor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+    </android.support.constraint.ConstraintLayout>
+
+    <com.btc.common.extension.view.ContentLoaderProgressBar
+        android:id="@+id/sport_complex_loading"
+        style="?android:progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:indeterminate="true"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/sport_complex_no_content"
+        style="@style/ProSport.NoContentTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/sport_complex_info_no_content"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/sport_complex_loading_error"
+        style="@style/ProSport.ErrorTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/sport_complex_info_load_fail"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible"/>
+</android.support.constraint.ConstraintLayout>

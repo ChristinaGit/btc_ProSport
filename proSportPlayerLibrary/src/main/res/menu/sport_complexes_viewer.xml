@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".screen.activity.sportComplexViewer.SportComplexViewerActivity">
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_material_search"
+        android:title="@string/action_search"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_sort"
+        android:icon="@drawable/ic_material_sort"
+        android:title="@string/action_sort"
+        app:showAsAction="ifRoom">
+
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/action_sort_price_ascending"
+                    android:title="@string/action_sort_price_ascending"
+                    app:showAsAction="never"/>
+
+                <item
+                    android:id="@+id/action_sort_price_descending"
+                    android:title="@string/action_sort_price_descending"
+                    app:showAsAction="never"/>
+
+                <item
+                    android:id="@+id/action_sort_name"
+                    android:title="@string/action_sort_name"
+                    app:showAsAction="never"/>
+
+                <item
+                    android:id="@+id/action_sort_distance"
+                    android:title="@string/action_sort_distance"
+                    app:showAsAction="never"/>
+            </group>
+        </menu>
+    </item>
+</menu>

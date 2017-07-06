@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipToPadding="false"
+    android:clipChildren="false">
+
+    <CheckedTextView
+        android:id="@+id/day_1"
+        style="@style/ProSport.Manager.RepeatableIntervals.WeekDay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/day_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="S"/>
+
+    <CheckedTextView
+        android:id="@+id/day_2"
+        style="@style/ProSport.Manager.RepeatableIntervals.WeekDay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/day_3"
+        app:layout_constraintStart_toEndOf="@+id/day_1"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="M"/>
+
+    <CheckedTextView
+        android:id="@+id/day_3"
+        style="@style/ProSport.Manager.RepeatableIntervals.WeekDay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/day_4"
+        app:layout_constraintStart_toEndOf="@+id/day_2"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="T"/>
+
+    <CheckedTextView
+        android:id="@+id/day_4"
+        style="@style/ProSport.Manager.RepeatableIntervals.WeekDay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/day_5"
+        app:layout_constraintStart_toEndOf="@+id/day_3"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="W"/>
+
+    <CheckedTextView
+        android:id="@+id/day_5"
+        style="@style/ProSport.Manager.RepeatableIntervals.WeekDay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/day_6"
+        app:layout_constraintStart_toEndOf="@+id/day_4"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="T"/>
+
+    <CheckedTextView
+        android:id="@+id/day_6"
+        style="@style/ProSport.Manager.RepeatableIntervals.WeekDay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/day_7"
+        app:layout_constraintStart_toEndOf="@+id/day_5"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="F"/>
+
+    <CheckedTextView
+        android:id="@+id/day_7"
+        style="@style/ProSport.Manager.RepeatableIntervals.WeekDay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/day_6"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="S"/>
+</android.support.constraint.ConstraintLayout>

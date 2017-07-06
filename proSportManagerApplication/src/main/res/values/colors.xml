@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorBarSchedule">#8d6e63</color>
+    <color name="colorBarOrders">#1e88e5</color>
+    <color name="colorBarSales">#6a1b9a</color>
+
+    <integer-array name="playgroundColors">
+        <item>0xc62828</item>
+        <item>0xad1457</item>
+        <item>0x6a1b9a</item>
+        <item>0x4527a0</item>
+        <item>0x283593</item>
+        <item>0x1565c0</item>
+        <item>0x0277bd</item>
+        <item>0x00838f</item>
+        <item>0x00695c</item>
+        <item>0x2e7d32</item>
+        <item>0x558b2f</item>
+        <item>0x827717</item>
+        <item>0xe65100</item>
+        <item>0xd84315</item>
+        <item>0x5d4037</item>
+        <item>0x616161</item>
+        <item>0x455a64</item>
+    </integer-array>
+</resources>

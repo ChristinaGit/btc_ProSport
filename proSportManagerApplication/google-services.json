@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "84922637496",
+    "firebase_url": "https://prsport-166410.firebaseio.com",
+    "project_id": "prsport-166410",
+    "storage_bucket": "prsport-166410.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:84922637496:android:ccc1eee47640f5c2",
+        "android_client_info": {
+          "package_name": "com.btc.prosport.manager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "84922637496-vk5i55hqf5jvu7ufcgnga3v72co673ov.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNEExA8p3CUnBjMRHtFey4XMaZX0Y99Jg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:84922637496:android:666033aab92f904b",
+        "android_client_info": {
+          "package_name": "com.btc.prosport.player.soccer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "84922637496-vk5i55hqf5jvu7ufcgnga3v72co673ov.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNEExA8p3CUnBjMRHtFey4XMaZX0Y99Jg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

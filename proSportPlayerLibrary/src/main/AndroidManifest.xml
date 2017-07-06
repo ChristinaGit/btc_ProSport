@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.btc.prosport.player">
+
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <!--Pick avatar-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <!--Pick avatar, create avatar photo-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:supportsRtl="true"
+        android:theme="@style/ProSport.Player.AppTheme">
+
+        <activity
+            android:name=".screen.activity.sportComplexViewer.SportComplexViewerActivity"
+            android:exported="true"
+            android:label="@string/sport_complex_viewer_label"
+            android:screenOrientation="portrait"
+            android:theme="@style/ProSport.Player.AppTheme.NoActionBar">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data
+                    android:host="@string/prosport_api_host"
+                    android:pathPrefix="@string/prosport_api_sport_complexes_path"
+                    android:scheme="@string/prosport_api_scheme"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".screen.activity.ordersViewer.OrdersViewerActivity"
+            android:exported="false"
+            android:label="@string/orders_viewer_label"
+            android:screenOrientation="portrait"
+            android:theme="@style/ProSport.Player.AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".screen.activity.playerSettings.PlayerSettingsActivity"
+            android:exported="false"
+            android:label="@string/player_settings_title"
+            android:screenOrientation="portrait"
+            android:theme="@style/ProSport.Player.AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".screen.activity.photosViewer.PhotosViewerActivity"
+            android:exported="true"
+            android:label="@string/photos_viewer_label"
+            android:theme="@style/ProSport.Player.AppTheme.NoActionBar.Translucent">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data
+                    android:host="@string/prosport_api_host"
+                    android:pathPrefix="@string/prosport_api_playgrounds_path"
+                    android:scheme="@string/prosport_api_scheme"/>
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data
+                    android:host="@string/prosport_api_host"
+                    android:pathPrefix="@string/prosport_api_sport_complexes_path"
+                    android:scheme="@string/prosport_api_scheme"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".screen.activity.sportComplexesViewer.SportComplexesViewerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ProSport.Player.AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".screen.activity.booking.BookingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ProSport.Player.AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".screen.activity.feedback.FeedbackActivity"
+            android:exported="false"
+            android:label="@string/feedback_label"
+            android:screenOrientation="portrait"
+            android:theme="@style/ProSport.Player.AppTheme.NoActionBar"/>
+
+        <activity
+            android:name="com.btc.prosport.screen.activity.proSportVerification.ProSportVerificationActivity"
+            android:theme="@style/ProSport.Player.AppTheme.NoActionBar"/>
+
+        <meta-data
+            android:name="com.btc.prosport.CLIENT_ID"
+            android:value="@string/pro_sport_player_client_id"/>
+
+        <meta-data
+            android:name="com.btc.prosport.CLIENT_SECRET"
+            android:value="@string/pro_sport_player_client_secret"/>
+    </application>
+</manifest>

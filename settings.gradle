@@ -1,0 +1,11 @@
+include ':CommonLibrary'
+include ':ProSportCommonLibrary'
+include ':ProSportPlayerLibrary'
+include ':ProSportPlayerSoccerApplication'
+include ':ProSportManagerApplication'
+
+project(':CommonLibrary').projectDir = new File('../btc_CommonLibrary/commonlibrary')
+project(':ProSportCommonLibrary').projectDir = new File('proSportCommonLibrary')
+project(':ProSportPlayerLibrary').projectDir = new File('proSportPlayerLibrary')
+project(':ProSportPlayerSoccerApplication').projectDir = new File('proSportPlayerSoccerApplication')
+project(':ProSportManagerApplication').projectDir = new File('proSportManagerApplication')

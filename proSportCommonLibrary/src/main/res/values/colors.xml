@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryPlayer">#9CCC65</color>
+    <color name="colorPrimaryDarkPlayer">#689F38</color>
+    <color name="colorAccentPlayer">#ffd600</color>
+
+    <color name="colorPrimaryManager">#78909c</color>
+    <color name="colorPrimaryDarkManager">#455a64</color>
+    <color name="colorAccentManager">#64dd17</color>
+
+    <color name="colorOrderStateNotConfirmed">#ffd600</color>
+    <color name="colorOrderStateConfirmed">#9CCC65</color>
+    <color name="colorOrderStateCanceled">#e64a19</color>
+
+    <color name="dividerColor">@android:color/darker_gray</color>
+    <color name="disabledIntervalColor">#ddd</color>
+    <color name="pageIndicatorNormalColor">@android:color/darker_gray</color>
+</resources>

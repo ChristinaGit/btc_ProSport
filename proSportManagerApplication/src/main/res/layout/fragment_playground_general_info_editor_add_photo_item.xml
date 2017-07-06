@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageButton
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/add_photo_button"
+    android:layout_width="@dimen/playground_general_info_editor_photo_height"
+    android:layout_height="@dimen/playground_general_info_editor_photo_height"
+    android:layout_marginStart="@dimen/playground_general_info_editor_photos_spacing"
+    android:background="?colorPrimary"
+    android:foreground="?selectableItemBackgroundBorderless"
+    android:src="@drawable/ic_material_add"
+    android:tint="?android:textColorPrimaryInverse"/>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.btc.prosport.manager">
+
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name=".ManagerApplication"
+        android:allowBackup="true"
+        android:fullBackupContent="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/application_manager_label"
+        android:supportsRtl="true"
+        android:theme="@style/ProSport.Manager.AppTheme">
+
+        <meta-data
+            android:name="com.btc.prosport.CLIENT_ID"
+            android:value="@string/pro_sport_manager_client_id"/>
+
+        <meta-data
+            android:name="com.btc.prosport.CLIENT_SECRET"
+            android:value="@string/pro_sport_manager_client_secret"/>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBNEExA8p3CUnBjMRHtFey4XMaZX0Y99Jg"/>
+
+        <activity
+            android:name="com.btc.prosport.screen.activity.proSportVerification.ProSportVerificationActivity"
+            android:theme="@style/ProSport.Manager.AppTheme.NoActionBar"/>
+
+        <service android:name="com.btc.prosport.core.manager.account.ProSportAuthenticatorService">
+            <meta-data
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@xml/manager_authenticator"/>
+        </service>
+
+        <activity
+            android:name=".screen.activity.playgroundEditor.PlaygroundEditorActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ProSport.Manager.AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <activity
+            android:name=".screen.activity.workspace.WorkspaceActivity"
+            android:exported="true"
+            android:label="@string/workspace_label"
+            android:screenOrientation="portrait"
+            android:theme="@style/ProSport.Manager.AppTheme.NoActionBar">
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/workplace_orders_searchable"/>
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data
+                    android:host="@string/prosport_api_host"
+                    android:pathPrefix="@string/prosport_api_playgrounds_path"
+                    android:scheme="@string/prosport_api_scheme"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".screen.activity.orderDetails.OrderDetailsActivity"
+            android:exported="true"
+            android:label="@string/order_detail_label"
+            android:screenOrientation="portrait"
+            android:theme="@style/ProSport.Manager.AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <data
+                    android:host="@string/prosport_api_host"
+                    android:pathPrefix="@string/prosport_api_order_path"
+                    android:scheme="@string/prosport_api_scheme"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".screen.activity.orderEditor.OrderEditorActivity"
+            android:exported="true"
+            android:label="@string/order_editor_label"
+            android:screenOrientation="portrait"
+            android:theme="@style/ProSport.Manager.AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden"/>
+
+        <activity
+            android:name=".screen.activity.saleEditor.SaleEditorActivity"
+            android:exported="true"
+            android:label="@string/sale_editor_label"
+            android:screenOrientation="portrait"
+            android:theme="@style/ProSport.Manager.AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden"/>
+
+        <activity
+            android:name=".screen.activity.managerSettings.ManagerSettingsActivity"
+            android:exported="false"
+            android:label="@string/manager_settings_title"
+            android:screenOrientation="portrait"
+            android:theme="@style/ProSport.Manager.AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".screen.activity.feedback.FeedbackActivity"
+            android:exported="false"
+            android:label="@string/feedback_label"
+            android:screenOrientation="portrait"
+            android:theme="@style/ProSport.Manager.AppTheme.NoActionBar"/>
+    </application>
+</manifest>

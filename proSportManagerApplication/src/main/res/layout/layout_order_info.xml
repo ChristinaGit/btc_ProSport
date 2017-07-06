@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/order_sport_complex"
+        style="@style/Btc.Card.Large.Text.Header"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        app:layout_constraintEnd_toStartOf="@+id/order_more"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="Super sport complex"/>
+
+    <TextView
+        android:id="@+id/order_playground"
+        style="@style/Btc.Card.Large.Text.Subheader"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/order_sport_complex"
+        tools:text="Playground Name"/>
+
+    <ImageButton
+        android:id="@+id/order_more"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="4dp"
+        android:background="?selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_material_more_vert"
+        android:tint="?android:textColorSecondary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/order_sport_complex"
+        app:layout_constraintTop_toTopOf="@+id/order_sport_complex"
+        tools:ignore="ContentDescription"/>
+
+    <TextView
+        android:id="@+id/order_player_name"
+        style="@style/Btc.Card.Large.Text.Subheader"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxLines="3"
+        app:layout_constraintEnd_toStartOf="@+id/order_price"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/order_playground"
+        tools:text="Order creator name"/>
+
+    <TextView
+        android:id="@+id/order_price"
+        style="@style/Btc.Card.Large.Text.Subheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:textAlignment="textEnd"
+        app:layout_constraintBaseline_toBaselineOf="@+id/order_player_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/order_player_name"
+        tools:text="6000 \u20bd"/>
+
+    <TextView
+        android:id="@+id/order_id"
+        style="@style/Btc.Card.Large.Text.Content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/order_date"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/order_player_name"
+        tools:text="Order #132"/>
+
+    <TextView
+        android:id="@+id/order_date"
+        style="@style/Btc.Card.Large.Text.Content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBaseline_toBaselineOf="@+id/order_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/order_id"
+        tools:text="12 March 2017"/>
+
+    <TextView
+        android:id="@+id/order_intervals"
+        style="@style/Btc.Card.Large.Text.Subheader"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="none"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="8dp"
+        android:maxLines="@integer/max_lines_no_limit"
+        android:textAlignment="gravity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/order_id"
+        tools:text="Order intervals"/>
+</android.support.constraint.ConstraintLayout>

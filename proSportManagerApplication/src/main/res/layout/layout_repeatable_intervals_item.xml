@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:paddingTop="8dp">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/interval_time_start_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:hintAnimationEnabled="false"
+        app:layout_constraintBottom_toTopOf="@+id/interval_date_start_container"
+        app:layout_constraintEnd_toStartOf="@+id/interval_time_separator"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/interval_time_start"
+            style="@style/ProSport.Manager.RepeatableIntervals.IntervalTime"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:foreground="?selectableItemBackground"
+            android:gravity="end"
+            android:hint="@string/repeatable_intervals_time_start_hint"
+            android:textAlignment="gravity"
+            tools:text="12:00 PM"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/interval_time_separator"
+        style="@style/ProSport.Manager.RepeatableIntervals.IntervalTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="4dp"
+        android:text="@string/repeatable_intervals_time_separator"
+        app:layout_constraintBottom_toBottomOf="@+id/interval_time_start_container"
+        app:layout_constraintEnd_toStartOf="@+id/interval_time_end_container"
+        app:layout_constraintStart_toEndOf="@+id/interval_time_start_container"
+        app:layout_constraintTop_toTopOf="@+id/interval_time_start_container"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/interval_time_end_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:hintAnimationEnabled="false"
+        app:layout_constraintBottom_toBottomOf="@+id/interval_time_start_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/interval_time_separator"
+        app:layout_constraintTop_toTopOf="@+id/interval_time_start_container">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/interval_time_end"
+            style="@style/ProSport.Manager.RepeatableIntervals.IntervalTime"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:foreground="?selectableItemBackground"
+            android:hint="@string/repeatable_intervals_time_end_hint"
+            tools:text="14:30 AM"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/interval_date_start_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:hintAnimationEnabled="false"
+        app:layout_constraintBottom_toTopOf="@+id/interval_date_end_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/interval_time_start_container">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/interval_date_start"
+            style="@style/Btc.Text.NonEditable.Cleared"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:foreground="?selectableItemBackground"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:textAlignment="gravity"
+            tools:text="9 january"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/interval_date_end_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:hintAnimationEnabled="false"
+        app:layout_constraintBottom_toTopOf="@+id/interval_repeat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/interval_date_start_container">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/interval_date_end"
+            style="@style/Btc.Text.NonEditable.Cleared"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:foreground="?selectableItemBackground"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:textAlignment="gravity"
+            tools:text="12 january"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <CheckBox
+        android:id="@+id/interval_repeat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:text="@string/repeatable_intervals_repeat"
+        app:layout_constraintBottom_toTopOf="@+id/interval_repeat_week"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/interval_date_end_container"/>
+
+    <include
+        android:id="@+id/interval_repeat_week"
+        layout="@layout/layout_repeatable_interval_week"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/interval_repeat"/>
+</android.support.constraint.ConstraintLayout>

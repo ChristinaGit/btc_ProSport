@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/CardView.Light"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:foreground="?android:selectableItemBackground"
+    app:cardCornerRadius="@dimen/card_large_corner_radius">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/sport_complex_photo"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="@string/description_sport_complex_photo"
+            app:layout_constraintBottom_toTopOf="@+id/sport_complex_name"
+            app:layout_constraintDimensionRatio="H,16:9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/ic_material_archive"
+            tools:tint="?colorAccent"/>
+
+        <TextView
+            android:id="@+id/sport_complex_name"
+            style="@style/Btc.Card.Large.Text.Header"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:lines="2"
+            android:maxLines="2"
+            android:minLines="1"
+            app:layout_constraintBottom_toTopOf="@+id/sport_complex_subway_stations"
+            app:layout_constraintEnd_toStartOf="@+id/sport_complex_distance"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sport_complex_photo"
+            tools:text="Sport complex name preview"/>
+
+        <TextView
+            android:id="@+id/sport_complex_distance"
+            style="@style/Btc.Card.Large.Text.Subheader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            app:layout_constraintBaseline_toBaselineOf="@+id/sport_complex_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/sport_complex_name"
+            app:layout_constraintTop_toTopOf="@+id/sport_complex_name"
+            tools:text="123 m"/>
+
+        <TextView
+            android:id="@+id/sport_complex_subway_stations"
+            style="@style/Btc.Card.Large.Text.Subheader"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxLines="3"
+            app:layout_constraintBottom_toTopOf="@+id/sport_complex_minimum_price"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sport_complex_name"
+            tools:text="Subway stations 1, Subway stations 2, Subway stations 3, Subway stations 4, Subway stations 5, Subway stations 6, Subway stations 7, Subway stations 8"/>
+
+        <TextView
+            android:id="@+id/sport_complex_minimum_price"
+            style="@style/Btc.Card.Large.Text.Content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/sport_complex_address"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sport_complex_subway_stations"
+            tools:text="123 Р"/>
+
+        <TextView
+            android:id="@+id/sport_complex_address"
+            style="@style/Btc.Card.Large.Text.Subheader"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sport_complex_minimum_price"
+            tools:text="Moscow"/>
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

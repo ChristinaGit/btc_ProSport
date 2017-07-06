@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        barColorWhenSelected="@color/colorBarSchedule"
+        icon="@drawable/ic_material_schedule"
+        id="@+id/tab_schedule"
+        title="@string/bottom_menu_item_schedule"/>
+
+    <tab
+        barColorWhenSelected="@color/colorBarOrders"
+        icon="@drawable/ic_material_assignment"
+        id="@+id/tab_orders"
+        title="@string/bottom_menu_item_orders"/>
+
+    <tab
+        barColorWhenSelected="@color/colorBarSales"
+        icon="@drawable/ic_material_local_offer"
+        id="@+id/tab_sales"
+        title="@string/bottom_menu_item_sales"/>
+</tabs>

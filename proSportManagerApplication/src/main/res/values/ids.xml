@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tag_view_order_id" type="id"/>
+    <item name="tag_view_sale_id" type="id"/>
+    <item name="tag_view_action" type="id"/>
+    <item name="tag_view_interval_week_day" type="id"/>
+    <item name="tag_view_covering_id" type="id"/>
+</resources>

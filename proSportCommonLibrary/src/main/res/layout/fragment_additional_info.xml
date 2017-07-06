@@ -1,0 +1,101 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingEnd="@dimen/activity_horizontal_margin"
+    android:paddingStart="@dimen/activity_horizontal_margin">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/prosport_additional_info_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/prosport_additional_info_title"
+            style="@style/ProSport.AuthTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/additional_info_title"
+            app:layout_constraintBottom_toTopOf="@+id/prosport_first_name_input_layout"
+            app:layout_constraintStart_toStartOf="@id/prosport_first_name_input_layout"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="spread_inside"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/prosport_first_name_input_layout"
+            style="@style/ProSport.AuthInputLayoutStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/prosport_last_name_input_layout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/prosport_additional_info_title">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/prosport_first_name_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/additional_info_first_name_hint"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/prosport_last_name_input_layout"
+            style="@style/ProSport.AuthInputLayoutStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/prosport_email_input_layout"
+            app:layout_constraintEnd_toEndOf="@id/prosport_first_name_input_layout"
+            app:layout_constraintStart_toStartOf="@id/prosport_first_name_input_layout"
+            app:layout_constraintTop_toBottomOf="@+id/prosport_first_name_input_layout">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/prosport_last_name_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/additional_info_last_name_hint"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/prosport_email_input_layout"
+            style="@style/ProSport.AuthInputLayoutStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/send_additional_info_button"
+            app:layout_constraintEnd_toEndOf="@id/prosport_last_name_input_layout"
+            app:layout_constraintStart_toStartOf="@id/prosport_last_name_input_layout"
+            app:layout_constraintTop_toBottomOf="@+id/prosport_last_name_input_layout">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/prosport_email_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/additional_info_email_hint"
+                android:imeOptions="actionDone"
+                android:inputType="textEmailAddress"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/send_additional_info_button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/additional_info_send_info_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/prosport_email_input_layout"
+            app:layout_constraintTop_toBottomOf="@id/prosport_email_input_layout"/>
+    </android.support.constraint.ConstraintLayout>
+
+    <com.btc.common.extension.view.ContentLoaderProgressBar
+        android:id="@+id/prosport_progressbar"
+        style="?android:progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:visibility="gone"/>
+</FrameLayout>

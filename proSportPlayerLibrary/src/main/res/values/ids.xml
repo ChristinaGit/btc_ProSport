@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tag_view_sport_complex_id" type="id"/>
+    <item name="tag_view_playground_id" type="id"/>
+    <item name="tag_view_order_id" type="id"/>
+    <item name="tag_view_photo_position" type="id"/>
+    <item name="tag_view_photo_uri" type="id"/>
+</resources>

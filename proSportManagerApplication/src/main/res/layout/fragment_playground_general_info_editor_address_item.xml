@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/coordinates_input_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/address_input_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/coordinates_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:hint="@string/playground_editor_general_info_coordinates_hint"
+            android:inputType="text"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/address_input_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/map_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/coordinates_input_layout">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/address_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/playground_editor_general_info_address_hint"
+            android:inputType="textPostalAddress"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <FrameLayout
+        android:id="@+id/map_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="16:9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/address_input_layout">
+
+        <ImageView
+            android:id="@+id/map_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="4dp"
+            android:layout_marginEnd="4dp"
+            android:src="@drawable/powered_by_google_light"/>
+    </FrameLayout>
+
+    <com.btc.common.extension.view.ContentLoaderProgressBar
+        android:id="@+id/map_progressbar"
+        style="?android:progressBarStyleLarge"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:indeterminate="true"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@id/map_layout"
+        app:layout_constraintStart_toStartOf="@id/map_layout"
+        app:layout_constraintTop_toBottomOf="@id/map_layout"
+        app:layout_constraintTop_toTopOf="@id/map_layout"/>
+
+    <TextView
+        android:id="@+id/map_error"
+        style="@style/ProSport.ErrorTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/playground_editor_general_info_map_error"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/map_layout"
+        app:layout_constraintEnd_toEndOf="@id/map_layout"
+        app:layout_constraintStart_toStartOf="@id/map_layout"
+        app:layout_constraintTop_toTopOf="@id/map_layout"/>
+</android.support.constraint.ConstraintLayout>

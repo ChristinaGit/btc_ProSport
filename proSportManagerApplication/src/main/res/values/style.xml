@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ProSport.Manager.RepeatableIntervals.WeekDay" parent="ProSport.Manager">
+        <item name="android:textAlignment">gravity</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:foreground">?selectableItemBackgroundBorderless</item>
+        <item name="android:background">@drawable/bg_week_day</item>
+    </style>
+
+    <style name="ProSport.Manager.RepeatableIntervals.IntervalTime" parent="Btc.Text.NonEditable.Cleared">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Title</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="ProSport.Manager.PlaygroundPicker.PlaygroundName" parent="ProSport.Manager">
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="ProSport.Manager.PlaygroundPicker.SportComplexName" parent="ProSport.Manager">
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:textAlignment">gravity</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+</resources>

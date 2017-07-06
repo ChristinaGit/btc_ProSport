@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ga_trackingId">*removed_for_preview*</string>
+
+    <bool name="ga_autoActivityTracking">true</bool>
+
+    <screenName name="com.btc.prosport.screen.activity.proSportVerification.ProSportVerificationActivity">
+        Manager: Verification
+    </screenName>
+
+    <screenName name="com.btc.prosport.manager.screen.activity.playgroundEditor.PlaygroundEditorActivity">
+        Manager: Playground editor
+    </screenName>
+    <screenName name="com.btc.prosport.manager.screen.activity.workspace.WorkspaceActivity">
+        Manager: Workspace
+    </screenName>
+    <screenName name="com.btc.prosport.manager.screen.activity.orderDetails.OrderDetailsActivity">
+        Manager: Order detail
+    </screenName>
+    <screenName name="com.btc.prosport.manager.screen.activity.orderEditor.OrderEditorActivity">
+        Manager: Order editor
+    </screenName>
+    <screenName name="com.btc.prosport.manager.screen.activity.orderEditor.SaleEditorActivity">
+        Manager: Sale editor
+    </screenName>
+    <screenName name="com.btc.prosport.manager.screen.activity.managerSettings.ManagerSettingsActivity">
+        Manager: Settings
+    </screenName>
+    <screenName name="com.btc.prosport.manager.screen.activity.feedback.FeedbackActivity">
+        Manager: Feedback
+    </screenName>
+</resources>

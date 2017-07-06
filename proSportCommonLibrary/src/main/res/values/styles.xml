@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ProSport"/>
+
+    <style name="ProSport.Base"/>
+
+    <style name="ProSport.Player"/>
+
+    <style name="ProSport.Manager"/>
+
+    <!--region App theme-->
+
+    <style name="ProSport.Base.AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:alertDialogTheme">@style/ProSport.Base.DialogTheme</item>
+        <item name="android:alertDialogStyle">@style/ProSport.Base.DialogTheme</item>
+        <item name="android:dialogTheme">@style/ProSport.Base.DialogTheme</item>
+
+        <item name="actionModeCloseDrawable">@drawable/ic_material_clear</item>
+    </style>
+
+    <style name="ProSport.Base.AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="ProSport.Base.AppTheme.NoActionBar.Translucent">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="ProSport.Player.AppTheme" parent="ProSport.Base.AppTheme">
+        <item name="colorPrimary">@color/colorPrimaryPlayer</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPlayer</item>
+        <item name="colorAccent">@color/colorAccentPlayer</item>
+        <item name="actionModeBackground">@color/colorPrimaryDarkPlayer</item>
+
+        <item name="android:alertDialogTheme">@style/ProSport.Player.DialogTheme</item>
+        <item name="android:alertDialogStyle">@style/ProSport.Player.DialogTheme</item>
+        <item name="android:dialogTheme">@style/ProSport.Player.DialogTheme</item>
+    </style>
+
+    <style name="ProSport.Player.AppTheme.NoActionBar" parent="ProSport.Base.AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryPlayer</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPlayer</item>
+        <item name="colorAccent">@color/colorAccentPlayer</item>
+        <item name="actionModeBackground">@color/colorPrimaryDarkPlayer</item>
+
+        <item name="android:alertDialogTheme">@style/ProSport.Player.DialogTheme</item>
+        <item name="android:alertDialogStyle">@style/ProSport.Player.DialogTheme</item>
+        <item name="android:dialogTheme">@style/ProSport.Player.DialogTheme</item>
+    </style>
+
+    <style name="ProSport.Player.AppTheme.NoActionBar.Translucent" parent="ProSport.Base.AppTheme.NoActionBar.Translucent">
+        <item name="colorPrimary">@color/colorPrimaryPlayer</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPlayer</item>
+        <item name="colorAccent">@color/colorAccentPlayer</item>
+        <item name="actionModeBackground">@color/colorPrimaryDarkPlayer</item>
+
+        <item name="android:alertDialogTheme">@style/ProSport.Player.DialogTheme</item>
+        <item name="android:alertDialogStyle">@style/ProSport.Player.DialogTheme</item>
+        <item name="android:dialogTheme">@style/ProSport.Player.DialogTheme</item>
+
+        <!--fixme colorControlNormal-->
+        <item name="colorControlNormal">@android:color/white</item>
+    </style>
+
+    <style name="ProSport.Manager.AppTheme" parent="ProSport.Base.AppTheme">
+        <item name="colorPrimary">@color/colorPrimaryManager</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkManager</item>
+        <item name="colorAccent">@color/colorAccentManager</item>
+        <item name="actionModeBackground">@color/colorPrimaryDarkManager</item>
+
+        <item name="android:alertDialogTheme">@style/ProSport.Manager.DialogTheme</item>
+        <item name="android:alertDialogStyle">@style/ProSport.Manager.DialogTheme</item>
+        <item name="android:dialogTheme">@style/ProSport.Manager.DialogTheme</item>
+    </style>
+
+    <style name="ProSport.Manager.AppTheme.NoActionBar" parent="ProSport.Base.AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryManager</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkManager</item>
+        <item name="colorAccent">@color/colorAccentManager</item>
+        <item name="actionModeBackground">@color/colorPrimaryDarkManager</item>
+
+        <item name="android:alertDialogTheme">@style/ProSport.Manager.DialogTheme</item>
+        <item name="android:alertDialogStyle">@style/ProSport.Manager.DialogTheme</item>
+        <item name="android:dialogTheme">@style/ProSport.Manager.DialogTheme</item>
+    </style>
+
+    <!--endregion App theme-->
+
+    <style name="ProSport.Base.AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="ProSport.Base.AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="ProSport.Base.DialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert"/>
+
+    <style name="ProSport.Manager.DialogTheme" parent="ProSport.Base.DialogTheme">
+        <item name="colorPrimary">@color/colorPrimaryManager</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkManager</item>
+        <item name="colorAccent">@color/colorAccentManager</item>
+    </style>
+
+    <style name="ProSport.Player.DialogTheme" parent="ProSport.Base.DialogTheme">
+        <item name="colorPrimary">@color/colorPrimaryPlayer</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPlayer</item>
+        <item name="colorAccent">@color/colorAccentPlayer</item>
+    </style>
+
+    <!--region Pro sport reservation intervals-->
+
+    <style name="ProSport.Base.Intervals"/>
+
+    <style name="ProSport.Base.Intervals.Item">
+        <item name="android:foreground">?selectableItemBackgroundBorderless</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+
+    <!--endregion Pro sport reservation intervals-->
+
+    <!--region Pro sport BottomSheet-->
+
+    <style name="ProSport.Base.BottomSheet"/>
+
+    <style name="ProSport.Base.BottomSheet.Container">
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+    <style name="ProSport.Base.BottomSheet.Header">
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:textAlignment">gravity</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:minHeight">56dp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Headline</item>
+    </style>
+
+    <style name="ProSport.Base.BottomSheet.Item">
+        <item name="android:minHeight">48dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:textAlignment">gravity</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Small</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="ProSport.Base.BottomSheet.Icon">
+        <item name="android:minHeight">24dp</item>
+        <item name="android:textAlignment">gravity</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:width">24dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+    </style>
+
+    <!--endregion Pro sport BottomSheet-->
+
+    <style name="ProSport.Base.SearchActionButtonStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">false</item>
+        <item name="android:foreground">?selectableItemBackground</item>
+        <item name="android:paddingEnd">48dp</item>
+        <item name="android:layout_marginEnd">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginStart">@dimen/activity_horizontal_margin</item>
+    </style>
+
+    <style name="ProSport.AuthInputLayoutStyle">
+        <item name="android:layout_marginBottom">@dimen/auth_field_margin</item>
+        <item name="android:layout_marginTop">@dimen/auth_field_margin</item>
+    </style>
+
+    <style name="ProSport.AuthTitleStyle">
+        <item name="android:layout_marginBottom">@dimen/auth_field_margin</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Display1</item>
+        <item name="android:textColor">?colorAccent</item>
+    </style>
+
+    <style name="ProSport.ErrorTextStyle">
+        <item name="android:ellipsize">end</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Small</item>
+        <item name="android:textAlignment">gravity</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">3</item>
+        <item name="android:drawablePadding">@dimen/text_drawable_padding_medium</item>
+    </style>
+
+    <style name="ProSport.ErrorTextStyle.Inverse">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Small.Inverse</item>
+    </style>
+
+    <style name="ProSport.NoContentTextStyle">
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:maxLines">3</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="ProSport.SuccessTextStyle">
+        <item name="android:ellipsize">end</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Small</item>
+        <item name="android:textAlignment">gravity</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">3</item>
+        <item name="android:drawablePadding">@dimen/text_drawable_padding_medium</item>
+    </style>
+</resources>

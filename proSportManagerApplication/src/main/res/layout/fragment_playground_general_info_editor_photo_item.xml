@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/playground_general_info_editor_photo_height"
+        android:layout_marginEnd="@dimen/playground_general_info_editor_photos_spacing"
+        android:layout_marginStart="@dimen/playground_general_info_editor_photos_spacing"
+        android:contentDescription="@string/playground_editor_general_info_photo_view_description"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="w,16:9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/remove_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@android:color/transparent"
+        android:foreground="?selectableItemBackgroundBorderless"
+        android:padding="8dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/remove_fab"
+        app:layout_constraintEnd_toEndOf="@id/photo"
+        app:layout_constraintTop_toTopOf="@id/photo"/>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ProSport API -->
+    <string name="prosport_api_scheme" translatable="false">http</string>
+    <string name="prosport_api_host" translatable="false">*removed_for_preview*</string>
+    <string name="prosport_api_sport_complexes_path" translatable="false">/apis/v1/sport_complexes/</string>
+    <string name="prosport_api_playgrounds_path" translatable="false">/apis/v1/playgrounds/</string>
+    <string name="prosport_api_order_path" translatable="false">/apis/v1/orders/</string>
+
+    <string name="feedback_receiver_email" translatable="false">*removed_for_preview*</string>
+
+    <!-- Account manager_authenticator -->
+    <string name="prosport_manager_account_type" translatable="false">com.btc.prosport.MANAGER_ACCOUNT</string>
+    <string name="prosport_player_account_type" translatable="false">com.btc.prosport.PLAYER_ACCOUNT</string>
+
+    <string name="prosport_verification_title">Sign in</string>
+
+    <string name="action_open_drawer">Открыть боковое меню</string>
+    <string name="action_close_drawer">Закрыть боковое меню</string>
+
+    <string name="intervals_price_format">%d</string>
+    <string name="intervals_price_no_data">&#8212;</string>
+    <string name="intervals_sale_marker">%</string>
+
+    <string name="message_error_fail_perform_phone_call_insufficient_permission">Недостаточно разрешений для звонка</string>
+    <string name="message_error_settings_not_found_allow_permission_manual">Не удалось найти приложение настроек. Пожалуйста выдайте разрешения самостоятельно</string>
+    <string name="message_error_dialer_not_found">Не удалось найти приложение для звонков</string>
+    <string name="message_error_field_required">Обязательное поле</string>
+    <string name="message_error_retry_password_mismatch">Пароли не совпадают</string>
+    <string name="message_error_no_internet_connection">Ошибка интернет соединения</string>
+    <string name="message_error_auth_unauthorized">Неверный номер телефона или пароль</string>
+    <string name="message_error_server_side">Ошибка сервера</string>
+    <string name="message_error_account_already_exists">Аккаунт уже существует</string>
+    <string name="message_error_fail_add_account">Ошибка добавления аккаунта</string>
+    <string name="message_error_account_not_found">Не удалось найти аккаунт</string>
+    <string name="message_error_fail_load_user">Не удалось получить данные пользователя</string>
+    <string name="message_error_remote_exception">Ошибка сервера</string>
+    <string name="message_error_operation_canceled">Операция отменена</string>
+    <string name="message_error_avatar_changing_failed">Не удалось изменить аватар</string>
+    <string name="message_error_image_size_is_big">Размер изображения превышает максимальный</string>
+    <string name="message_error_fail_perform_pick_photo_insufficient_permission">Недостаточно разрешений для выбора фото. Исправить?</string>
+
+    <string name="message_photo_changing_in_progress">Смена аватара&#8230;</string>
+    <string name="message_you_must_be_authorized">Вы должны авторизоваться для работы с приложением</string>
+
+    <string name="caption_order_state_canceled">Отменён</string>
+    <string name="caption_order_state_confirmed">Подтверждён</string>
+    <string name="caption_order_state_not_confirmed">Не подтверждён</string>
+
+    <string name="log_in_hint_input_phone">Телефон</string>
+    <string name="log_in_title">Вход</string>
+    <string name="log_in_hint_input_password">Пароль</string>
+    <string name="log_in_button">Войти</string>
+    <string name="log_in_sign_up_button">Зарегистрироваться</string>
+
+    <string name="sign_up_title">Регистрация</string>
+    <string name="sign_up_hint_retry_password">Повтор пароля</string>
+
+    <string name="additional_info_title">Дополнительная информация</string>
+    <string name="additional_info_send_info_button">Отправить</string>
+    <string name="additional_info_first_name_hint">Имя</string>
+    <string name="additional_info_last_name_hint">Фамилия</string>
+    <string name="additional_info_email_hint">Email</string>
+
+    <string name="loading_no_content">Нечего показать</string>
+    <string name="loading_failed">Загрузить не удалось</string>
+
+    <string name="settings_user_category_personal_data">Личные данные</string>
+    <string name="settings_user_city">Город</string>
+    <string name="settings_user_phone_number">Номер телефона</string>
+    <string name="settings_user_last_name">Фамилия</string>
+    <string name="settings_user_first_name">Имя</string>
+    <string name="settings_user_email">Электронная почта</string>
+    <string name="settings_category_user_notifications">Уведомления</string>
+    <string name="settings_user_notifications">Показывать уведомления</string>
+    <string name="settings_user_notifications_sound">Звук</string>
+    <string name="settings_user_notifications_vibration">Вибрация</string>
+    <string name="settings_user_require_authorisation">Для просмотра данных о пользователе необходимо авторизоваться</string>
+    <string name="settings_user_no_city">Нет города</string>
+    <string name="settings_user_logout">Выйти</string>
+
+    <string name="preferences_key_user_notifications" translatable="false">user_notifications</string>
+    <string name="preferences_key_notifications_sound" translatable="false">user_notifications_sound</string>
+    <string name="preferences_key_notifications_vibration" translatable="false">user_notifications_vibration</string>
+    <string name="preferences_key_user_city" translatable="false">user_city</string>
+    <string name="preferences_key_user_phone_number" translatable="false">user_phone_number</string>
+    <string name="preferences_key_user_last_name" translatable="false">user_last_name</string>
+    <string name="preferences_key_user_email" translatable="false">user_email</string>
+    <string name="preferences_key_user_first_name" translatable="false">user_first_name</string>
+    <string name="preferences_key_logout" translatable="false">user_logout</string>
+
+    <string name="feedback_hint_name_user">Имя</string>
+    <string name="feedback_hint_email_user">Email</string>
+    <string name="feedback_hint_message">Введите сообщение</string>
+    <string name="feedback_send_message_button">отправить</string>
+    <string name="feedback_send_massage_fail">Не удалось отправить сообщение</string>
+    <string name="feedback_navigate_to_home_button">Главный экран</string>
+    <string name="feedback_message_success_sent_title">Ваш отзыв был успешно отправлен.</string>
+    <string name="feedback_message_success_sent_subtitle">Мы свяжемся с Вами в ближайшее время.</string>
+
+    <!-- Image picker -->
+    <string name="image_picker_title">Фото</string>
+    <string-array name="image_picker_items">
+        <item>Загрузить из галереи</item>
+        <item>Сделать снимок</item>
+    </string-array>
+</resources>

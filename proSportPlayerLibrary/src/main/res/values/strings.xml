@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="application_player_label">PrSport Player</string>
+    <string name="player_account_label">PrSport Игрок</string>
+
+    <string name="pro_sport_player_client_id" translatable="false">*removed_for_preview*</string>
+    <string name="pro_sport_player_client_secret" translatable="false">*removed_for_preview*</string>
+
+    <string name="action_add_to_favorites">Добавить в избранное</string>
+    <string name="action_sort">Изменить сортровку</string>
+    <string name="action_sort_price_ascending">По цене (по возрастанию)</string>
+    <string name="action_sort_price_descending">По цене (по убыванию)</string>
+    <string name="action_sort_name">По названию</string>
+    <string name="action_sort_distance">По удалённости</string>
+    <string name="action_search">Начать поиск</string>
+    <string name="action_loading">Загрузка&#8230;</string>
+    <string name="action_pick_date">Выбрать дату</string>
+    <string name="action_home">Главный экран</string>
+    <string name="action_orders">Мои заказы</string>
+    <string name="action_settings">Настройки</string>
+    <string name="action_advanced">Дополнительно</string>
+    <string name="action_selection_done">Подтвердить выделение</string>
+    <string name="action_reserve_playground">Забронировать</string>
+    <string name="action_phone_call">Позвонить</string>
+    <string name="action_navigate_to_playground">Перейти к площадке</string>
+    <string name="action_feedback">Обратная связь</string>
+
+    <string name="description_sport_complex_photo">Фотография спортивного комплекса</string>
+    <string name="description_playground_photo">Фотография площадки</string>
+    <string name="description_player_avatar">Аватар пользователя</string>
+
+    <string name="photos_viewer_label">Просмотрт фотографий</string>
+
+    <string name="playgrounds_list_playground_covering_format">Покрытие: %1$s</string>
+    <string name="playgrounds_list_playground_size_format">Размер: %1$d &#215; %2$d</string>
+    <string name="playgrounds_list_playground_part_size_format">Размер: %1$d &#215; %2$d (&#189;: %3$d &#215; %4$d)</string>
+
+    <string name="sport_complex_viewer_label">Просмотр спортивного комплекса</string>
+    <string name="sport_complex_viewer_title_loading">Загрузка&#8230;</string>
+    <string name="sport_complex_viewer_failed_add_to_favorites">Не удалось добавить в избранное</string>
+    <string name="sport_complex_viewer_failed_remove_from_favorites">Не удалось удалить из избранного</string>
+    <string name="sport_complex_viewer_details_title">Описание</string>
+    <string name="sport_complex_viewer_playgrounds_title">Площадки</string>
+    <string name="sport_complex_viewer_inventory_hint">Инветарь</string>
+    <string name="sport_complex_viewer_inventory_chargeable">платный</string>
+    <string name="sport_complex_viewer_inventory_not_chargeable">бесплатный</string>
+
+    <string name="sport_complexes_viewer_load_fail">Загрузить информацию о спортивном комплексе не удалось</string>
+    <string name="sport_complexes_viewer_photo_error">Не удалось загрузить фотографию</string>
+    <string name="sport_complexes_viewer_search_hint_date">Дата</string>
+    <string name="sport_complexes_viewer_search_hint_start_time">с</string>
+    <string name="sport_complexes_viewer_search_hint_end_time">до</string>
+    <string name="sport_complexes_viewer_search_hint_playground_name">Название</string>
+    <string name="sport_complexes_viewer_filer_all">Все</string>
+    <string name="sport_complexes_viewer_filer_favorites">Избранные</string>
+    <string name="sport_complexes_viewer_no_data">&#8212;</string>
+    <string name="sport_complexes_viewer_list_title">Список</string>
+    <string name="sport_complexes_viewer_map_title">Карта</string>
+    <string name="sport_complexes_viewer_search_day_today">сегодня</string>
+
+    <string name="sport_complexes_list_load_fail">Загрузить информацию о спортивных комплексах не удалось</string>
+    <string name="sport_complexes_list_minimum_price_format">от %d &#8381;</string>
+    <string name="sport_complexes_list_distance_far_format">%1$d км</string>
+    <string name="sport_complexes_list_distance_format">%1$.2f км</string>
+    <string name="sport_complexes_list_distance_near_format">%1$d м</string>
+
+    <string name="sport_complexes_map_insufficient_permission">Недостаточно разрешений для просмотра карты</string>
+    <string name="sport_complexes_map_retry_request_permission">Разрешить</string>
+    <string name="sport_complexes_map_permission_access_fine_location_explanation">Без доступа к данным о местоположении невозможно отобразить карту. Разрешить доступ?</string>
+
+    <string name="sport_complex_info_load_fail">Загрузить информацию о спортивном комплексе не удалось</string>
+    <string name="sport_complex_info_no_content">Информация о спортивном комплексе не найдена</string>
+    <string name="sport_complex_info_work_time_format">%1$s &#8211; %2$s</string>
+    <string name="sport_complex_info_no_data">&#8212;</string>
+
+    <string name="playgrounds_list_load_fail">Загрузить информацию о площадках не удалось</string>
+
+    <string name="intervals_load_fail">Загрузить данные не удалось</string>
+    <string name="intervals_selection_mode_title">Выбор времени</string>
+    <string name="intervals_create_order_confirmation_title">Подтвердите создание заказа</string>
+    <string name="intervals_create_order_confirmation_message">Забронировать игровую площадку &#171;%1$s (%2$s)&#187;?</string>
+    <string name="intervals_create_order_confirmation_message_time">Время: %1$s</string>
+    <string name="intervals_create_order_confirmation_message_price">Сумма: %1$d &#8381;</string>
+    <string name="intervals_create_order_progress_title">Выполнение операции</string>
+    <string name="intervals_create_order_progress_message">Создание заказа&#8230;</string>
+    <string name="intervals_order_created_title_format">Заказ №%1$d</string>
+    <string name="intervals_order_created_message">Ваш заказ успешно создан. Если в течении 10 минут заказ не подтвердят, то, пожалуйста, свяжитесь с оператором</string>
+    <string name="intervals_fail_create_order_title">Не удалось создать заказ</string>
+    <string name="intervals_fail_create_order_message">По какой-то причине создать заказ не удалось. Вы можете создать заказ, связавшись с оператором</string>
+    <string name="intervals_fail_create_order_call">Вызов оператора</string>
+    <string name="intervals_fail_create_order_without_account">Невозможно создать заказ без аккаунта</string>
+
+    <string name="orders_viewer_label">Заказы</string>
+
+    <string name="orders_list_id_format">Заказ №%1$d</string>
+    <string name="orders_list_place_format">Место: %1$s</string>
+    <string name="orders_list_state_format">Статус: %1$s</string>
+    <string name="orders_list_time_format">%1$s &#8211; %2$s</string>
+    <string name="orders_list_no_data">&#8212;</string>
+    <string name="orders_list_require_authorisation">Для просмотра списка заказов необходимо авторизоваться</string>
+    <string name="orders_list_load_fail">Загрузить список заказов не удалось</string>
+
+    <string name="navigation_add_account">Добавить аккаунт</string>
+
+    <string name="player_settings_title">Настройки</string>
+
+    <string name="request_failed">Произошла ошибка</string>
+
+    <string name="player_settings_notifications_key" translatable="false">player_notifications</string>
+    <string name="player_settings_notifications_sound_key" translatable="false">player_notifications_sound</string>
+    <string name="player_settings_notifications_vibration_key" translatable="false">player_notifications_vibration</string>
+
+    <string name="playground_photos_viewer_title">%1$d из %2$d</string>
+
+    <string name="feedback_label">Обратная связь</string>
+    <string name="feedback_email_sender_chooser_label">Отправить отзыв</string>
+
+    <plurals name="notification_order_confirmed_title">
+        <item quantity="one">%1$d заказ подтверждён</item>
+        <item quantity="two">%1$d заказа подтверждёно</item>
+        <item quantity="few">%1$d заказа подтверждено</item>
+        <item quantity="many">%1$d заказов подтверждено</item>
+        <item quantity="other">%1$d заказов подтверждено</item>
+    </plurals>
+    <plurals name="notification_order_cancelled_title">
+        <item quantity="one">%1$d заказ был отменён менеджером</item>
+        <item quantity="two">%1$d заказа были отменены менеджером</item>
+        <item quantity="few">%1$d заказа были отменены менеджером</item>
+        <item quantity="many">%1$d заказов были отменены менеджером</item>
+        <item quantity="other">%1$d заказа были отменены менеджером</item>
+    </plurals>
+    <string name="notification_order_confirmed_action">Заказ подтвержден.</string>
+    <string name="notification_order_cancelled_action">Заказ был отменен менеджером.</string>
+
+</resources>

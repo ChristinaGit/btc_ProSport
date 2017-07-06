@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/order_card"
+    style="@style/CardView.Light"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/card_large_corner_radius">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/sale_place"
+            style="@style/Btc.Card.Large.Text.Content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxLines="@integer/max_lines_no_limit"
+            android:paddingTop="@dimen/card_large_primary_text_padding_top"
+            app:layout_constraintEnd_toStartOf="@+id/sale_more"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="spread_inside"
+            tools:text="Order place"/>
+
+        <ImageButton
+            android:id="@+id/sale_more"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="4dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_material_more_vert"
+            android:tint="?android:textColorSecondary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/sale_place"
+            app:layout_constraintTop_toTopOf="@+id/sale_place"
+            tools:ignore="ContentDescription"/>
+
+        <TextView
+            android:id="@+id/sale_intervals"
+            style="@style/Btc.Card.Large.Text.Subheader"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="none"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="8dp"
+            android:maxLines="@integer/max_lines_no_limit"
+            android:textAlignment="gravity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sale_place"
+            tools:text="Order intervals"/>
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.TextInputLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/subway_input_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:hintEnabled="false">
+
+    <AutoCompleteTextView
+        android:id="@+id/subway_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:completionThreshold="1"
+        android:hint="@string/playground_editor_general_info_subway_station_hint"
+        android:inputType="textNoSuggestions|textPostalAddress"/>
+</android.support.design.widget.TextInputLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/settings_user_category_personal_data">
+        <ListPreference
+            android:icon="@drawable/ic_material_location_city"
+            android:key="@string/preferences_key_user_city"
+            android:title="@string/settings_user_city"/>
+
+        <EditTextPreference
+            android:enabled="false"
+            android:icon="@drawable/ic_material_local_phone"
+            android:key="@string/preferences_key_user_phone_number"
+            android:title="@string/settings_user_phone_number"/>
+
+        <EditTextPreference
+            android:icon="@drawable/ic_material_person"
+            android:key="@string/preferences_key_user_first_name"
+            android:title="@string/settings_user_first_name"/>
+        <EditTextPreference
+            android:icon="@drawable/ic_material_person"
+            android:key="@string/preferences_key_user_last_name"
+            android:title="@string/settings_user_last_name"/>
+
+        <EditTextPreference
+            android:icon="@drawable/ic_material_email"
+            android:key="@string/preferences_key_user_email"
+            android:title="@string/settings_user_email"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/settings_category_user_notifications">
+        <SwitchPreference
+            android:defaultValue="@bool/user_enable_notifications_default"
+            android:key="@string/preferences_key_user_notifications"
+            android:title="@string/settings_user_notifications"/>
+
+        <RingtonePreference
+            android:dependency="@string/preferences_key_user_notifications"
+            android:key="@string/preferences_key_notifications_sound"
+            android:title="@string/settings_user_notifications_sound"/>
+
+        <CheckBoxPreference
+            android:defaultValue="@bool/user_vibration_default"
+            android:dependency="@string/preferences_key_user_notifications"
+            android:key="@string/preferences_key_notifications_vibration"
+            android:title="@string/settings_user_notifications_vibration"/>
+    </PreferenceCategory>
+
+    <Preference
+        android:key="@string/preferences_key_logout"
+        android:title="@string/settings_user_logout"/>
+</PreferenceScreen>

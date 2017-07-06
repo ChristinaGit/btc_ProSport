@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/background">
+        <shape android:shape="rectangle"/>
+    </item>
+    <item
+        android:id="@+id/foreground"
+        android:bottom="@dimen/interval_padding"
+        android:left="@dimen/interval_padding"
+        android:right="@dimen/interval_padding">
+        <shape android:shape="rectangle">
+            <corners
+                android:bottomLeftRadius="@dimen/interval_corner_radius"
+                android:bottomRightRadius="@dimen/interval_corner_radius"/>
+            <solid android:color="@android:color/white"/>
+        </shape>
+    </item>
+</layer-list>

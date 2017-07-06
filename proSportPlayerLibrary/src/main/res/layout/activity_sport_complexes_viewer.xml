@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.btc.prosport.player.screen.activity.sportComplexesViewer.SportComplexesViewerActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:expanded="true"
+        app:theme="@style/ProSport.Base.AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="enterAlways|scroll|snap"
+            app:popupTheme="@style/ProSport.Base.AppTheme.PopupOverlay">
+
+            <Spinner
+                android:id="@+id/sport_complexes_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:popupTheme="@style/ProSport.Base.AppTheme.PopupOverlay"
+                android:spinnerMode="dropdown"/>
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/sport_complexes_search_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_scrollFlags="scroll"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/sport_complexes_search_start_time"
+                style="@style/ProSport.Base.SearchActionButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/sport_complexes_viewer_search_hint_start_time"
+                android:lines="1"
+                android:maxLines="1"
+                app:layout_constraintBottom_toTopOf="@+id/sport_complexes_search_date"
+                app:layout_constraintEnd_toStartOf="@+id/sport_complexes_search_end_time"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed"/>
+
+            <ImageButton
+                android:id="@+id/sport_complexes_clear_search_start_time"
+                style="@style/ClearContentButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/sport_complexes_search_start_time"
+                app:layout_constraintEnd_toEndOf="@+id/sport_complexes_search_start_time"
+                app:layout_constraintTop_toTopOf="@+id/sport_complexes_search_start_time"
+                tools:ignore="ContentDescription"/>
+
+            <TextView
+                android:id="@+id/sport_complexes_search_end_time"
+                style="@style/ProSport.Base.SearchActionButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/sport_complexes_viewer_search_hint_end_time"
+                android:lines="1"
+                android:maxLines="1"
+                app:layout_constraintBottom_toBottomOf="@+id/sport_complexes_search_start_time"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/sport_complexes_search_start_time"
+                app:layout_constraintTop_toTopOf="@+id/sport_complexes_search_start_time"
+                app:layout_constraintVertical_chainStyle="packed"/>
+
+            <ImageButton
+                android:id="@+id/sport_complexes_clear_search_end_time"
+                style="@style/ClearContentButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/sport_complexes_search_end_time"
+                app:layout_constraintEnd_toEndOf="@+id/sport_complexes_search_end_time"
+                app:layout_constraintTop_toTopOf="@+id/sport_complexes_search_end_time"
+                tools:ignore="ContentDescription"/>
+
+            <TextView
+                android:id="@+id/sport_complexes_search_date"
+                style="@style/ProSport.Base.SearchActionButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/sport_complexes_viewer_search_hint_date"
+                android:lines="1"
+                android:maxLines="1"
+                app:layout_constraintBottom_toTopOf="@+id/sport_complexes_search_name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sport_complexes_search_start_time"/>
+
+            <ImageButton
+                android:id="@+id/sport_complexes_clear_search_date"
+                style="@style/ClearContentButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/sport_complexes_search_date"
+                app:layout_constraintEnd_toEndOf="@+id/sport_complexes_search_date"
+                app:layout_constraintTop_toTopOf="@+id/sport_complexes_search_date"
+                tools:ignore="ContentDescription"/>
+
+            <EditText
+                android:id="@+id/sport_complexes_search_name"
+                style="@style/ProSport.Base.SearchActionButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/sport_complexes_viewer_search_hint_playground_name"
+                android:imeOptions="actionSearch"
+                android:inputType="text|textAutoCorrect"
+                android:lines="1"
+                android:maxLines="1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sport_complexes_search_date"/>
+
+            <ImageButton
+                android:id="@+id/sport_complexes_clear_search_name"
+                style="@style/ClearContentButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/sport_complexes_search_name"
+                app:layout_constraintEnd_toEndOf="@+id/sport_complexes_search_name"
+                app:layout_constraintTop_toTopOf="@+id/sport_complexes_search_name"
+                tools:ignore="ContentDescription"/>
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            style="@style/Widget.AppCompat.Toolbar.Button.Navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    <FrameLayout
+        android:id="@+id/sport_complex_info_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?colorBackgroundFloating"
+        android:elevation="8dp"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="128dp"
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+        <fragment
+            android:id="@+id/sport_complexes_info_fragment"
+            android:name="com.btc.prosport.player.screen.fragment.SportComplexInfoFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout="@layout/fragment_sport_complex_info"/>
+    </FrameLayout>
+</android.support.design.widget.CoordinatorLayout>

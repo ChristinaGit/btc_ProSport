@@ -1,0 +1,215 @@
+<resources>
+    <string name="application_manager_label">PrSport: Управление</string>
+    <string name="manager_account_label">PrSport Менеджер</string>
+
+    <string name="pro_sport_manager_client_id" translatable="false">*removed_for_preview*</string>
+    <string name="pro_sport_manager_client_secret" translatable="false">*removed_for_preview*</string>
+
+    <string name="action_sort">Изменить сортировку</string>
+    <string name="action_sort_price_ascending">По цене (по возрастанию)</string>
+    <string name="action_sort_price_descending">По цене (по убыванию)</string>
+    <string name="action_sort_date_ascending">По дате (по возрастанию)</string>
+    <string name="action_sort_date_descending">По дате (по убыванию)</string>
+    <string name="action_search">Начать поиск</string>
+    <string name="action_pick_date">Выбрать дату</string>
+    <string name="action_selection_done">Подтвердить выделение</string>
+    <string name="action_complete_editing">Завершить редактирование</string>
+    <string name="action_edit_prices">Изменить цены</string>
+    <string name="action_commit_changes">Сохранить изменения</string>
+
+    <string name="message_error_required_field">Обязательное поле</string>
+
+    <string name="feedback_label">Обратная связь</string>
+    <string name="feedback_email_sender_chooser_label">Отправть отзыв</string>
+
+    <string name="workspace_label">@string/application_manager_label</string>
+    <string name="workspace_intervals_selection_mode_title">Выбор времени</string>
+    <string name="workspace_order_search_hint">Поиск</string>
+
+    <string name="order_filter_status_title">Статусы</string>
+    <string name="order_filter_sport_complex_title">Спорткомплексы</string>
+    <string name="order_filter_playground_title">Поля</string>
+    <string name="order_filter_confirmed_short">Подтв.</string>
+    <string name="order_filter_not_confirmed_short">Неподтв.</string>
+
+    <string name="repeatable_intervals_repeat_begin_hint">Поторять с</string>
+    <string name="repeatable_intervals_repeat_until_hint">Поторять до</string>
+    <string name="repeatable_intervals_time_start_hint">Время начала</string>
+    <string name="repeatable_intervals_time_end_hint">Время окончания</string>
+    <string name="repeatable_intervals_date_end_hint">Дата окончания</string>
+    <string name="repeatable_intervals_date_start_hint">Дата начала</string>
+    <string name="repeatable_intervals_time_separator"> &#8212; </string>
+    <string name="repeatable_intervals_repeat">Повторять</string>
+
+    <string name="playground_picker_all_playgrounds">Весь комплекс</string>
+    <string name="playground_picker_save">Сохранить</string>
+
+    <string name="sale_editor_label">Редактирование скидки</string>
+    <string name="sale_editor_place_label">Размещение</string>
+    <string name="sale_editor_sale_type_label">Тип скидки</string>
+    <string name="sale_editor_sale_type_relative">В процентах</string>
+    <string name="sale_editor_sale_type_absolute">Изменение цены</string>
+    <string name="sale_editor_sale_type_new_price">Новая цена</string>
+    <string name="sale_editor_sale_type_label_relative">Величина скидки</string>
+    <string name="sale_editor_sale_type_label_absolute">Величина скидки</string>
+    <string name="sale_editor_sale_type_label_new_price">Цена</string>
+    <string name="sale_editor_sale_places_load_fail">Загрузить данные не удалось</string>
+    <string name="sale_editor_place_format">%1$s (%2$s)</string>
+    <string name="sale_editor_place_all_playgrounds">весь</string>
+    <string name="sale_editor_error_no_playgrounds">Необходимо выбрать хотя бы одну площадку для создания скидки</string>
+    <string name="sale_editor_error_no_sale_value">Для создания скидки необходимо ввести её размер</string>
+    <string name="sale_editor_error_incorrect_sale_value">Рамер скидки имеет неверный формат</string>
+    <string name="sale_editor_fail_create_sale_without_account">Невозможно создать скидку не выполнив авторизацию</string>
+    <string name="sale_editor_fail_create_sale">Создать скидку не удалось</string>
+    <string name="sale_editor_commit_changes_progress_title">Выполнение операции</string>
+    <string name="sale_editor_create_sale_progress_message">Создание скидки&#8230;</string>
+
+    <string name="order_editor_label">Редактирование заказа</string>
+    <string name="order_editor_player_phone_hint">Номер телефона</string>
+    <string name="order_editor_player_first_name_hint">Имя</string>
+    <string name="order_editor_player_last_name_hint">Фамилия</string>
+    <string name="order_editor_price_hint">Цена (необязательно)</string>
+    <string name="order_editor_player_name_placeholder">&#8212;</string>
+    <string name="order_editor_player_search">Поиск игрока&#8230;</string>
+    <string name="order_editor_fail_create_order_without_account">Невозможно создать заказ не выполнив авторизацию</string>
+    <string name="order_editor_fail_change_order_without_account">Невозможно изменить заказ не выполнив авторизацию</string>
+    <string name="order_editor_fail_create_order">Создать заказ не удалось</string>
+    <string name="order_editor_fail_change_order">Изменить заказ не удалось</string>
+    <string name="order_editor_fail_load_order">Зугрузить заказ не удалось</string>
+    <string name="order_editor_commit_changes_progress_title">Выполнение операции</string>
+    <string name="order_editor_create_order_progress_message">Создание заказа&#8230;</string>
+    <string name="order_editor_change_order_progress_message">Изменение заказа&#8230;</string>
+
+    <string name="price_editor_label">Цены</string>
+    <string name="price_editor_new_price_dialog_title">Новая цена</string>
+    <string name="price_editor_price_load_fail">Загрузить данные не удалось</string>
+    <string name="price_editor_prices_selection_mode_title">Изменение цен</string>
+    <string name="price_editor_no_price">&#8212;</string>
+    <string name="price_editor_success_change_prices">Цены успешно изменены</string>
+    <string name="price_editor_fail_change_prices">Изменить цены не удалось</string>
+    <string name="price_editor_change_prices_progress_title">Выполнение операции</string>
+    <string name="price_editor_change_prices_progress_message">Изменение цен&#8230;</string>
+
+    <string name="manager_navigation_add_playground">Добавить площадку</string>
+    <string name="manager_navigation_edit_prices">Изменить цены</string>
+    <string name="manager_navigation_settings">Настройки</string>
+    <string name="manager_navigation_feedback">Обратная связь</string>
+
+    <string name="order_detail_label">Информация о заказе</string>
+
+    <!-- Playground editor -->
+    <string name="playground_editor_previous_page_button">Назад</string>
+    <string name="playground_editor_next_page_button">Далее</string>
+    <string name="playground_editor_create_playground_button">Создать</string>
+
+    <!-- Playground general info editor -->
+    <string name="playground_editor_general_info_title">Основная информация</string>
+    <string name="playground_editor_general_info_name_hint">Название площадки</string>
+    <string name="playground_editor_general_info_address_hint">Адрес</string>
+    <string name="playground_editor_general_info_coordinates_hint">Местоположение</string>
+    <string name="playground_editor_general_info_phone_number_hint">Телефон</string>
+    <string name="playground_editor_general_info_subway_station_hint">Станция метро</string>
+    <string name="playground_editor_general_info_phone_number_title">Телефоны</string>
+    <string name="playground_editor_general_info_city_title">Город</string>
+    <string name="playground_editor_general_info_subways_title">Станции метро</string>
+    <string name="playground_editor_general_info_photo_title">Фотографии</string>
+    <string name="playground_editor_general_info_map_error">Не удалось загрузить карту.</string>
+    <string name="playground_editor_message_has_uncommitted_changes">Есть не сохранённые изменения. Сохранить?</string>
+    <string name="playground_editor_general_info_lat_lng_format">%1$s, %2$s</string>
+    <string name="playground_editor_general_info_choose_image_title">Выбрать картинку</string>
+    <string name="playground_editor_general_info_photo_view_description">Фото площадки</string>
+    <string name="message_error_fail_perform_get_photo_insufficient_permission">Недостаточно разрешений для выбора фото</string>
+
+    <!-- Playground schedule editor -->
+    <string name="playground_editor_schedule_title">Расписание</string>
+    <string name="playground_editor_schedule_day_off_title">Выходной</string>
+    <string name="playground_editor_schedule_time_divider">-</string>
+
+    <!-- Playground price editor -->
+    <string name="playground_editor_price_title">Цены</string>
+
+    <string name="playground_editor_progress_title">Выполнение операции</string>
+
+    <!--Playground dimensions editor -->
+    <string name="playground_editor_dimensions_width_hint">Ширина</string>
+    <string name="playground_editor_dimensions_height_hint">Высота</string>
+    <string name="playground_editor_dimensions_length_hint">Длина</string>
+    <string name="playground_editor_dimensions_title">Размеры поля</string>
+    <string name="playground_editor_dimensions_progress_message">Изменение размеров поля&#8230;</string>
+
+    <!--Playground covering editor -->
+    <string name="playground_editor_covering_title">Покрытие</string>
+    <string name="playground_editor_covering_progress_message">Изменение покрытия&#8230;</string>
+
+    <!--Playground attributes editor -->
+    <string name="playground_editor_attributes_title">Инфрастуктура</string>
+    <string name="playground_editor_attributes_progress_message">Изменение атрибутов&#8230;</string>
+
+    <string name="order_viewer_label_format">Заказ №%1$d</string>
+
+    <string name="description_manager_avatar">Аватар пользователя</string>
+
+    <string name="order_number">Заказ №%d</string>
+    <string name="order_interval_date_time_format">%3$s %1$s &#8211; %2$s</string>
+    <string name="order_user_name_format">%1$s %2$s</string>
+
+    <!-- Orders ListView -->
+    <string name="action_cancel_order">Отменить</string>
+    <string name="action_confirm_order">Подтвердить</string>
+    <string name="action_change_order_state">Изменить статус</string>
+    <string name="action_phone_call">Позвонить</string>
+    <string name="action_edit_order">Редактировать</string>
+    <string name="order_state_changed">Статус заказа изменён</string>
+    <string name="orders_list_no_content">Заказов не найдено</string>
+    <string name="order_no_content">Заказ не найден</string>
+
+    <!-- BottomBar -->
+    <string name="bottom_menu_item_schedule">Расписание</string>
+    <string name="bottom_menu_item_orders">Заказы</string>
+    <string name="bottom_menu_item_sales">Скидки</string>
+
+    <!-- NavigationView -->
+    <string name="action_home">Главный экран</string>
+    <string name="action_orders">История заказов</string>
+    <string name="action_prices">Цены</string>
+    <string name="action_add_playground">Добавить площадку</string>
+    <string name="action_settings">Настройки</string>
+    <string name="action_feedback">Обратная связь</string>
+    <string name="action_loading">Загрузка…</string>
+
+    <!-- Spinner -->
+    <string name="orders_filter_all">Все</string>
+    <string name="orders_filter_confirmed">Подтверждённые</string>
+    <string name="orders_filter_not_confirmed">Неподтверждённые</string>
+    <string name="orders_filter_canceled">Отменённые</string>
+    <string name="orders_filter_search_query_hint">"%1$s"</string>
+
+    <string name="orders_state_confirmed">Подтверждён</string>
+    <string name="orders_state_not_confirmed">Неподтверждён</string>
+    <string name="orders_state_canceled">Отменён</string>
+
+    <string name="orders_list_no_data">&#8212;</string>
+
+    <string name="sales_list_load_fail">Закгрузить список скидок не удалось</string>
+    <string name="sales_list_delete_sale_progress_title">Выполнение операции</string>
+    <string name="sales_list_delete_sale_progress_message">Удаление скидки</string>
+    <string name="sales_list_delete_sale_fail">Удалить скидку не удалось</string>
+
+    <string name="manager_schedule_interval_load_fail">Загрузить данные не удалось</string>
+
+    <string name="loading_fail">Загрузить не удалось</string>
+    <string name="request_fail">При запросе произошла ошибка</string>
+
+    <string name="reservation_time_change">Изменить время бронирования</string>
+    <string name="request_failed">Произошла ошибка</string>
+    <string name="manager_settings_title">Настройки</string>
+
+    <string name="notification_new_order_action">Новый заказ.</string>
+    <plurals name="notification_order_created_title">
+        <item quantity="one">У вас %1$d неподтвержденный заказ</item>
+        <item quantity="two">У вас %1$d неподтвержденных заказа</item>
+        <item quantity="few">У вас %1$d неподтвержденных заказа</item>
+        <item quantity="many">У вас %1$d неподтвержденных заказов</item>
+        <item quantity="other">У вас %1$d неподтвержденных заказов</item>
+    </plurals>
+</resources>

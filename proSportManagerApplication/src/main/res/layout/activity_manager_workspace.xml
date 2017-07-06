@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:theme="@style/ProSport.Base.AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="enterAlways|scroll"
+            app:popupTheme="@style/ProSport.Base.AppTheme.PopupOverlay">
+
+            <Spinner
+                android:id="@+id/orders_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:popupTheme="@style/ProSport.Base.AppTheme.PopupOverlay"
+                android:spinnerMode="dropdown"
+                android:visibility="gone"/>
+        </android.support.v7.widget.Toolbar>
+
+        <CalendarView
+            android:id="@+id/date_picker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            app:layout_scrollFlags="scroll"
+            tools:visibility="visible"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/manager_workspace_page_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <FrameLayout
+            android:id="@+id/schedule_fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <fragment
+                android:id="@+id/schedule_fragment"
+                android:name="com.btc.prosport.manager.screen.fragment.ScheduleFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/orders_list_fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <fragment
+                android:id="@+id/orders_list_fragment"
+                android:name="com.btc.prosport.manager.screen.fragment.playgroundOrdersList.OrdersListFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/sales_list_fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <fragment
+                android:id="@+id/sales_list_fragment"
+                android:name="com.btc.prosport.manager.screen.fragment.SalesListFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/filters_list_fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <fragment
+                android:id="@+id/filter_list_fragment"
+                android:name="com.btc.prosport.manager.screen.fragment.OrdersFilterListFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </FrameLayout>
+
+    </FrameLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:src="@drawable/ic_material_add"
+        android:visibility="invisible"
+        app:fabSize="normal"
+        app:layout_anchor="@+id/bottom_bar"
+        app:layout_anchorGravity="end|top"
+        app:useCompatPadding="true"/>
+
+    <com.roughike.bottombar.BottomBar
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom"
+        app:bb_activeTabColor="@android:color/white"
+        app:bb_behavior="shy|shifting"
+        app:bb_showShadow="true"
+        app:bb_tabXmlResource="@xml/bottom_bar_tabs"/>
+</android.support.design.widget.CoordinatorLayout>
